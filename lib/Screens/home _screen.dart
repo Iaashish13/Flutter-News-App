@@ -14,18 +14,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<CategoryModel> categories = List<CategoryModel>.empty(growable: true);
 
-  // Future<NewsModel>? _newsModel;
-
   @override
   void initState() {
     categories = getCategories();
-    // getNews();
     super.initState();
   }
-
-  // getNews() async {
-  //   _newsModel = (await News().getNews()) as Future<NewsModel>?;
-  // }
 
   @override
   Widget build(BuildContext context) {
