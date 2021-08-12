@@ -21,7 +21,7 @@ List<CategoryModel> getCategories() {
   categoryModel = CategoryModel(
       categoryName: 'Sports',
       imageUrl:
-          'https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
+          'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
   category.add(categoryModel);
   categoryModel = CategoryModel(
       categoryName: 'Technology',
@@ -33,6 +33,10 @@ List<CategoryModel> getCategories() {
       imageUrl:
           'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80');
   category.add(categoryModel);
-
+  categoryModel = CategoryModel(
+      categoryName: "Science",
+      imageUrl:
+          'https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+  category.add(categoryModel);
   return category;
 }

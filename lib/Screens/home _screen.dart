@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lets_learn/Pages/article_view.dart';
+import 'package:lets_learn/Screens//article_view.dart';
 import 'package:lets_learn/Widgets/category_tile.dart';
 import 'package:lets_learn/helper/category_data.dart';
 import 'package:lets_learn/helper/news.dart';
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Container(
                   padding: EdgeInsets.only(top: 8.0),
-                  child: FutureBuilder<NewModel?>(
+                  child: FutureBuilder<NewsModel?>(
                     future: News().getNews(),
                     builder: (context, snapshot) {
                       if (snapshot.hasData) {

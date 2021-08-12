@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:lets_learn/models/news_model.dart';
 
 class News {
-  Future<NewModel?> getNews() async {
+  Future<NewsModel?> getNews() async {
     var client = http.Client();
     var newsModel;
     try {
@@ -13,7 +13,8 @@ class News {
         print(response.statusCode);
         var jsonString = response.body;
         var jsonMap = jsonDecode(jsonString);
-        newsModel = NewModel.fromJson(jsonMap);
+        newsModel = NewsModel.fromJson(jsonMap);
+
         return newsModel;
       } else {
         print(response.statusCode);
