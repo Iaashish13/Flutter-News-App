@@ -57,7 +57,7 @@ class _CategoryNewsState extends State<CategoryNews> {
           child: Column(
             children: <Widget>[
               Container(
-                padding: EdgeInsets.only(top: 8.0),
+                padding: EdgeInsets.only(top: 8.0, left: 16.0, right: 16.0),
                 child: FutureBuilder<CategoryNewsModel?>(
                   future: CategoryNewsClass().getCategoryNews(widget.category),
                   builder: (context, snapshot) {

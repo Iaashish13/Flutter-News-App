@@ -7,7 +7,7 @@ class CategoryNewsClass {
     var client = http.Client();
     var categoryNewsModel;
     String url =
-        "https://newsapi.org/v2/top-headlines?country=us&category=$category&apiKey=732251517fdf4998ab4fb7850917de46";
+        "https://newsapi.org/v2/top-headlines?country=us&category=$category&apiKey=Your_API_KEY";
     try {
       var response = await client.get(Uri.parse(url));
       if (response.statusCode == 200) {
